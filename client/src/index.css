@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+
+
+/* Body styles */
+body {
+  @apply bg-black text-gray-900 ;
+}
+
+h2 {
+  @apply text-4xl font-semibold;
+}
+
+h3 {
+  @apply text-2xl font-semibold
+}
+
+h5 {
+  @apply text-xl font-semibold
+}
+
+input,
+select,
+textarea {
+  @apply p-2 rounded-md
+}
+
+
+
+@layer components {
+  .sub-menu {
+    @apply absolute top-[100%] p-4 rounded-md backdrop-blur shadow-lg border border-gray-200 text-black bg-white/[0.9]
+    /*origin-[50%-170px]*/
+  }
+
+
+
+}
+
+/* Utility Styles */
+@layer utilities {
+  .flex-center {
+    @apply flex items-center;
+  }
+
+  .flex-center-between {
+    @apply flex items-center justify-between
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
