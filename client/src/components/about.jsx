@@ -19,9 +19,9 @@ function About() {
           transition={{ duration: 1.5 }}
         >
           <div className="py-5 px-8 lg:px-10 h-auto w-[350px] md:w-[700px] lg:w-[800px] xl:w-[700px] ">
-            <h1 className="text-[16px] md:text-2xl font-serif font-semibold">Front end Developer</h1>
+            <h1 className="text-[16px] md:text-2xl font-serif font-semibold">Full Stack Developer(MERN)</h1>
             <div className="border-2 border-dashed"></div>
-            <p className="text-sm md:text-xl py-3 font-serif font-light text-justify">Front-end developer with 2 years of experience crafting responsive web applications in the banking and real estate industries. Skilled in CSS, JavaScript and modern frameworks, with a strong foundation in UX design and user behavior analysis. Adept at optimizing website performance and enhancing user engagement. Successfully improved an existing website’s conversion rate by 80% through refined code and intuitive design. Passionate about building seamless digital experiences that drive business growth.</p>
+            <p className="text-sm md:text-xl py-3 font-serif font-light text-justify">Front-end developer with 2+ years of experience crafting responsive web applications in the banking and real estate industries. Skilled in CSS, JavaScript and modern frameworks, with a strong foundation in UX design and user behavior analysis. Adept at optimizing website performance and enhancing user engagement. Successfully improved an existing website’s conversion rate by 80% through refined code and intuitive design. Passionate about building seamless digital experiences that drive business growth.</p>
           </div>
           <div className="py-2 px-8 lg:px-10 h-auto w-[300px] md:w-[700px] lg:w-[800px] xl:w-[700px]">
             <h1 className="text-2xl font-serif font-semibold">Personal Information</h1>

@@ -21,7 +21,7 @@ const skills = {
 
 export default function SkillsBar() {
   return (
-    <div className="bg-[#00E6FF] min-h-[200vh]">
+    <div className="bg-[#00E6FF] min-h-screen">
       <div className="py-10">
         <h1 className="text-3xl md:text-5xl font-sans pb-2 px-10">My Skills</h1>
         <div className="border-2 border-dashed"></div>

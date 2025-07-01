@@ -2,12 +2,21 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiMongodb, SiExpress } from "react-icons/si";
+import { AiOutlinePython } from "react-icons/ai";
+import { FaGithub } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+
+
+
 
 const icons = [
-  { icon: <SiMongodb className="text-green-500" />, angle: 0 },
-  { icon: <SiExpress className="text-gray-500" />, angle: 90 },
-  { icon: <FaReact className="text-blue-500" />, angle: 180 },
-  { icon: <FaNodeJs className="text-green-600" />, angle: 270 },
+  { icon: <SiMongodb className="text-green-500" />, angle: -10 },
+  { icon: <SiExpress className="text-gray-500" />, angle: 45 },
+  { icon: <FaReact className="text-blue-500" />, angle: 90 },
+  { icon: <FaNodeJs className="text-green-600" />, angle: 145 },
+  { icon: <AiOutlinePython  className="text-yellow-400" />, angle: 180 },
+  { icon: <SiMysql   className="text-blue-500" />, angle: 240 },
+  { icon: <FaGithub   className="text-black" />, angle: 290 },
 ];
 
 export default function AboutImage() {
