@@ -165,34 +165,54 @@ function Resume() {
   return (
     <div className="bg-[#00E6FF] min-h-[250vh] md:min-h-[250vh] overflow-hidden">
       <div className="py-10">
-        <h1 className="text-lg md:text-3xl lg:text-6xl font-bold pb-5 px-10">My Resume</h1>
+        <h1 className="text-lg md:text-3xl lg:text-6xl font-bold pb-5 px-10">
+          My Resume
+        </h1>
         <div className="border-2 border-dashed"></div>
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-8 p-5 lg:p-8">
         {resumeData.map((section, index) => {
           console.log(section);
           return (
-            <div key={index} className="py-10">
+            <div key={index} className="lg:py-10">
               {section.title && (
                 <motion.div
                   initial={{ opacity: 0, translateX: "-30%" }}
                   whileInView={{ opacity: 1, translateX: 0 }}
                   transition={{ duration: 1.5 }}
                 >
-                  <h1 className="text-base md:text-2xl lg:text-3xl font-bold pb-5">{section.title}</h1>
-                  {section.data?.map((item, dataIdx) => ( // Ensure `data` exists before mapping
-                    <div key={dataIdx} className="relative h-[500px] md:h-[430px] w-1 bg-[#FF4081] my-5">
-                      <div className="absolute top-10 flex lg:gap-x-4 items-start">
-                        <p>{item.icon}</p>
-                        <div className="border-2 h-auto w-[250px] md:w-[680px] lg:w-[800px] xl:w-[650px] p-3">
-                          <p className="font-semibold font-serif">{item.company}</p>
-                          <p className="font-semibold font-serif">{item.role}</p>
-                          <p className="font-medium font-serif">{item.responsibility}</p>
-                          <p className="font-semibold font-serif">{item.dura}</p>
+                  <h1 className="text-base md:text-2xl lg:text-3xl font-bold lg:pb-5">
+                    {section.title}
+                  </h1>
+                  {section.data?.map(
+                    (
+                      item,
+                      dataIdx // Ensure `data` exists before mapping
+                    ) => (
+                      <div
+                        key={dataIdx}
+                        className="relative h-[570px] md:h-[430px] w-1 bg-[#FF4081] my-5"
+                      >
+                        <div className="absolute top-10 flex lg:gap-x-4 items-start">
+                          <p>{item.icon}</p>
+                          <div className="border-2 h-auto w-[350px] md:w-[680px] lg:w-[800px] xl:w-[650px] p-3">
+                            <p className="font-semibold font-serif">
+                              {item.company}
+                            </p>
+                            <p className="font-semibold font-serif">
+                              {item.role}
+                            </p>
+                            <p className="font-medium font-serif">
+                              {item.responsibility}
+                            </p>
+                            <p className="font-semibold font-serif">
+                              {item.dura}
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    )
+                  )}
                 </motion.div>
               )}
               {section.instEdu?.map((part, idx) => {
@@ -202,18 +222,31 @@ function Resume() {
                     initial={{ opacity: 0, translateX: "30%" }}
                     whileInView={{ opacity: 1, translateX: 0 }}
                     transition={{ duration: 1.5 }}
-
-                    key={idx}>
-                    <h2 className="text-base md:text-2xl lg:text-3xl font-bold pb-5">{part.title}</h2>
+                    key={idx}
+                  >
+                    <h2 className="text-base md:text-2xl lg:text-3xl font-bold pb-5">
+                      {part.title}
+                    </h2>
                     {part.data.map((item, partIdx) => (
-                      <div key={partIdx} className="relative h-[200px] md:h-[250px] w-1 bg-[#FF4081] my-5">
+                      <div
+                        key={partIdx}
+                        className="relative h-[200px] md:h-[250px] w-1 bg-[#FF4081] my-5"
+                      >
                         <div className="absolute top-10 flex gap-x-4 items-start">
                           <p>{item.icon}</p>
                           <div className="border-2 h-auto w-[250px] md:w-[580px] lg:w-[800px] xl:w-[650px] p-3">
-                            <p className="text-[12px] md:text-lg font-semibold font-serif">{item.cname}</p>
-                            <p className="text-[12px] md:text-lg font-medium font-serif">{item.sector}</p>
-                            <p className="text-[12px] md:text-lg font-medium font-serif">{item.cgpa}</p>
-                            <p className="text-[12px] md:text-lg font-medium font-serif">{item.pasout}</p>
+                            <p className="text-[12px] md:text-lg font-semibold font-serif">
+                              {item.cname}
+                            </p>
+                            <p className="text-[12px] md:text-lg font-medium font-serif">
+                              {item.sector}
+                            </p>
+                            <p className="text-[12px] md:text-lg font-medium font-serif">
+                              {item.cgpa}
+                            </p>
+                            <p className="text-[12px] md:text-lg font-medium font-serif">
+                              {item.pasout}
+                            </p>
                           </div>
                         </div>
                       </div>
